@@ -16,59 +16,44 @@
   <header>
     <div class="logo">
       <img src="https://logosmarcas.net/imageup/YouTube/YouTube-Logo-PNG7.png" alt="Youtube Logo" id="youtube-logo">
-      <!-- <img src="https://logosmarcas.net/wp-content/uploads/2020/04/YouTube-Emblema.jpg" alt="Youtube Logo" id="youtube-logo"> -->
-      <!-- https://logosmarcas.net/imageup/YouTube/YouTube-Logo-PNG7.png -->
     </div>
     <input type="search" placeholder="Search..." class="search-bar" oninput="searchVideo(event)">
-    <!-- <button type="submit" class="search-btn" name="search">Search</button> -->
   </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <ul>
-        <li><i class="fas fa-home"></i><span>Home</span></li>
-        <li><i class="fas fa-fire"></i><span>Trending</span></li>
-        <li><i class="fas fa-tv"></i><span>Subscriptions</span></li>
-        <li><i class="fas fa-book"></i><span>Library</span></li>
-        <li><i class="fas fa-futbol"></i><span>Library</span></li>
-      </ul>
-    </aside>
-
-    <main>
-      <div class="category-filter">
-        <button class="category-btn" data-category="all">All</button>
-        <button class="category-btn" data-category="music"><i class="fas fa-music"></i> Music</button>
-        <button class="category-btn" data-category="sports"><i class="fas fa-futbol"></i> Sports</button>
-        <button class="category-btn" data-category="gaming"><i class="fas fa-gamepad"></i> Gaming</button>
+  <main>
+    <div class="category-filter">
+      <button class="category-btn" data-category="all">All</button>
+      <button class="category-btn" data-category="music"><i class="fas fa-music"></i> Music</button>
+      <button class="category-btn" data-category="sports"><i class="fas fa-futbol"></i> Sports</button>
+      <button class="category-btn" data-category="gaming"><i class="fas fa-gamepad"></i> Gaming</button>
+    </div>
+    <div class="video-grid" id="videos">
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
+        <h3>Como fumar 10 milhões de vapes</h3>
+        <p>Manual do Mundo</p>
+        <p>Sports</p>
       </div>
-      <div class="video-grid" id="videos">
-        <div class="video-card">
-          <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
-          <h3>Como fumar 10 milhões de vapes</h3>
-          <p>Manual do Mundo</p>
-          <p>Sports</p>
-        </div>
-        <div class="video-card">
-          <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
-          <h3>Como fazer a retifica de motor AP 1.8</h3>
-          <p>Manual do Mundo</p>
-          <p>Sports</p>
-        </div>
-        <div class="video-card">
-          <img
-            src="https://c4.wallpaperflare.com/wallpaper/503/959/715/sau-paulo-brasil-soccer-sports-wallpaper-preview.jpg"
-            alt="Video Thumbnail">
-          <h3>Porque o São Paulo Futebol Clube é tão gigante?</h3>
-          <p>Manual do Mundo</p>
-          <p>Sports</p>
-        </div>
-        <div class="video-card">
-          <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
-          <h3>Jetta sem teto solar, é de fato só uma Santana?</h3>
-          <p>Manual do Mundo</p>
-          <p>Sports</p>
-        </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
+        <h3>Como fazer a retifica de motor AP 1.8</h3>
+        <p>Manual do Mundo</p>
+        <p>Sports</p>
       </div>
-    </main>
-  </div>
+      <div class="video-card">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/503/959/715/sau-paulo-brasil-soccer-sports-wallpaper-preview.jpg"
+          alt="Video Thumbnail">
+        <h3>Porque o São Paulo Futebol Clube é tão gigante?</h3>
+        <p>Manual do Mundo</p>
+        <p>Sports</p>
+      </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
+        <h3>Jetta sem teto solar, é de fato só uma Santana?</h3>
+        <p>Manual do Mundo</p>
+        <p>Sports</p>
+      </div>
+    </div>
+  </main>
 </body>
