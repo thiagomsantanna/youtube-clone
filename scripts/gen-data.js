@@ -1,7 +1,7 @@
 const randomNumber = () => Math.round(Math.random() * 1000);
 const VIDEO_CATEGORIES = ["music", "sports", "gaming"];
 
-const VIDEOS = [...Array(50)].map(() => ({
+const VIDEOS = [...Array(10)].map(() => ({
   title: faker.company.bs(),
   thumbnail: `${faker.image.lorempicsum.imageUrl(1280, 720)}?${randomNumber()}`,
   channelName: faker.company.companyName(),
@@ -21,7 +21,6 @@ function createVideoCard(video) {
   videoCard.classList.add("video-card");
   videoCard.classList.add(video.category);
 
-  // videoThumbnail.src = "https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg";
   const videoThumbnail = document.createElement("img");
   videoThumbnail.src = video.thumbnail;
   videoThumbnail.alt = "Video Thumbnail";
@@ -42,12 +41,13 @@ function createVideoCard(video) {
   videoCard.appendChild(videoChannelName);
   videoCard.appendChild(videoCategory);
 
+  /* 
+  <div class="video-card music">
+    <img src="http://img.com/img.jpg" alt="Video Thumbnail">
+    <h3>Video Title</h3>
+    <p>Channel Name</p>
+    <p>Banana</p>
+  </div> 
+  */
   return videoCard;
 }
-
-/* <div class="video-card music">
-  <img src="https://i.ytimg.com/vi/SrUgg03-uQY/maxresdefault.jpg" alt="Video Thumbnail">
-  <h3>Video Title</h3>
-  <p>Channel Name</p>
-  <p>Banana</p>
-</div> */
