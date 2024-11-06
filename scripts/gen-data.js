@@ -27,14 +27,12 @@ function createVideoCard(video) {
   videoThumbnail.alt = "Video Thumbnail";
 
   const videoTitle = document.createElement("h3");
-  videoTitle.classList.add("capitalize");
   videoTitle.textContent = video.title;
 
   const videoChannelName = document.createElement("p");
   videoChannelName.textContent = video.channelName;
 
   const videoCategory = document.createElement("p");
-  videoCategory.classList.add("capitalize");
   videoCategory.textContent = video.category;
 
   videoCard.appendChild(videoThumbnail);
