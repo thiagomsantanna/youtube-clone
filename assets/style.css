@@ -7,10 +7,9 @@ body {
 
 :root {
   --transparent: rgba(0, 0, 0, 0.1);
+  --youtube-red: #c4302b;
   --mid-red: #ff4500;
   --dark-red-gradient: linear-gradient(45deg, #ff0000, #ff6347);
-  --mid-red-gradient: linear-gradient(45deg, var(--mid-red), #FF0000);
-  --light-red-gradient: linear-gradient(45deg, #FF6347, var(--mid-red));
 }
 
 header {
@@ -21,13 +20,7 @@ header {
   padding: 10px 20px;
 }
 
-/* 
 .logo {
-  display: flex;
-  align-items: center;
-} */
-
-#youtube-logo {
   height: 60px;
   width: auto;
   margin-right: 15px;
@@ -126,12 +119,13 @@ header {
 }
 
 .category-btn:hover {
-  background: var(--light-red-gradient);
+  background: var(--youtube-red);
+  transition: none;
   box-shadow: 0 6px 8px var(--transparent);
 }
 
 .category-btn.active {
-  background: var(--mid-red-gradient);
+  background: var(--youtube-red);
   box-shadow: 0 2px 4px var(--transparent);
 }
 
@@ -182,14 +176,14 @@ header {
   font-weight: bold;
 }
 
-.attribution {
+footer {
   font-size: 15px;
   text-align: center;
   align-self: center;
   margin: 40px 0 20px 0;
 }
 
-.attribution a {
+footer a {
   color: var(--mid-red);
 }
 
