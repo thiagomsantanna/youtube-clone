@@ -7,9 +7,10 @@ body {
 
 :root {
   --transparent: rgba(0, 0, 0, 0.1);
+  --mid-red: #ff4500;
   --dark-red-gradient: linear-gradient(45deg, #ff0000, #ff6347);
-  --mid-red-gradient: linear-gradient(45deg, #FF4500, #FF0000);
-  --light-red-gradient: linear-gradient(45deg, #FF6347, #FF4500);
+  --mid-red-gradient: linear-gradient(45deg, var(--mid-red), #FF0000);
+  --light-red-gradient: linear-gradient(45deg, #FF6347, var(--mid-red));
 }
 
 header {
@@ -66,6 +67,7 @@ header {
 
 .container {
   display: flex;
+  flex-direction: column;
 }
 
 /* Sidebar sem funcionalidade por hora */
@@ -108,7 +110,6 @@ header {
   justify-content: center;
   gap: 10px;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
 }
 
 .category-btn {
@@ -138,7 +139,8 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
+  border-top: 1px solid #ddd;
 }
 
 .video-card {
@@ -178,6 +180,17 @@ header {
 
 .video-card p:nth-child(3) {
   font-weight: bold;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  align-self: center;
+  margin: 40px 0 20px 0;
+}
+
+.attribution a {
+  color: var(--mid-red);
 }
 
 @media screen and (max-width: 60px) {
