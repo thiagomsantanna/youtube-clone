@@ -14,8 +14,8 @@
 
 <body>
   <header>
-    <img src="./assets/images/YoutubeLogo.png" alt="Youtube Logo" id="youtube-logo">
-    <!-- <img src="https://logosmarcas.net/wp-content/uploads/2020/04/YouTube-Emblema.jpg" alt="Youtube Logo" id="youtube-logo"> -->
+    <img class="logo" src="./assets/images/YoutubeLogo.png" alt="Youtube Logo">
+    <!-- <img class="logo" src="https://logosmarcas.net/wp-content/uploads/2020/04/YouTube-Emblema.jpg" alt="Youtube Logo"> -->
     <!-- https://logosmarcas.net/imageup/YouTube/YouTube-Logo-PNG7.png -->
     <input type="search" placeholder="Search..." class="search-bar" oninput="searchVideo(event)">
   </header>
@@ -39,6 +39,7 @@
         <button class="category-btn" data-category="sports"><i class="fas fa-futbol"></i> Sports</button>
         <button class="category-btn" data-category="gaming"><i class="fas fa-gamepad"></i> Gaming</button>
       </div>
+
       <div class="video-grid" id="videos">
         <div class="video-card">
           <img src="./assets/images/ManualdoMundoChannel.jpg" alt="Video Thumbnail">
@@ -53,22 +54,21 @@
           <p>Sports</p>
         </div>
         <div class="video-card">
-          <img
-            src="https://c4.wallpaperflare.com/wallpaper/503/959/715/sau-paulo-brasil-soccer-sports-wallpaper-preview.jpg"
-            alt="Video Thumbnail">
+          <img src="./assets/images/spfc.jpg" alt="Video Thumbnail">
           <h3>Porque o São Paulo Futebol Clube é tão gigante?</h3>
           <p>Manual do Mundo</p>
           <p>Sports</p>
         </div>
         <div class="video-card">
-          <img src="https://img.odcdn.com.br/wp-content/uploads/2024/07/fortune-tiger2.jpg" alt="Video Thumbnail">
+          <img src="./assets/images/tiger.jpg" alt="Video Thumbnail">
           <h3>Horários bugados no Tigrinho</h3>
           <p>Fortune Tiger</p>
           <p>Gaming</p>
         </div>
       </div>
     </main>
-    <footer class="attribution">
+
+    <footer>
       Coded by <a href="#">Thiago Mundici de Sant'anna</a>.
     </footer>
   </div>
