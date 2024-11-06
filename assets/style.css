@@ -137,21 +137,20 @@ header {
 .video-grid {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px;
 }
 
 .video-card {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
   border: 1px solid #ddd;
   background-color: white;
   border-radius: 8px;
   height: 250px;
   width: 200px;
-  margin-top: 30px;
+  margin: 30px 10px 0 10px;
   text-transform: capitalize;
   transition: transform 0.2s;
 }
