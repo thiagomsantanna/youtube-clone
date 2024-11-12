@@ -13,9 +13,11 @@ function searchVideo(event) {
     };
 
     // Utilizando do valor "display: revert" nos videos é o que torna possível desfazer a busca
+    // Esse estilo é atribuído a todos os videos, garantindo que eles reapareçam em caso de nova busca
+    // ou uma busca vazia, sendo somente ocultados novamente caso não bata com a pesquisa
     video.style.display = "revert";
 
-    // Se caso o video não possuir o termo em nenhum dos campos, ele é ocultado
+    // Se caso o video NÃO possuir o termo em nenhum dos campos, ele é ocultado
     if (!matches(videoInfo, search)) video.style.display = "none";
   }
 }
