@@ -3,6 +3,7 @@ function searchVideo(event) {
   const videos = document.querySelectorAll(".video-card");
   const search = event.target.value.toLowerCase(); // Valor inserido na barra de busca
 
+  // Percorre por cada video da lista validando se bate com a pesquisa feita
   for (const video of videos) {
     // Traduz o card de video no HTML em um objeto
     const videoInfo = {
@@ -14,17 +15,17 @@ function searchVideo(event) {
     // Utilizando do valor "display: revert" nos videos é o que torna possível desfazer a busca
     video.style.display = "revert";
 
-    // Se caso o video não possuir o termino em nenhum dos campos, ele é ocultado
-    if (searchThrough(videoInfo, search)) video.style.display = "none";
+    // Se caso o video não possuir o termo em nenhum dos campos, ele é ocultado
+    if (!matches(videoInfo, search)) video.style.display = "none";
   }
 }
 
-function searchThrough(videoInfo, searchTerm) {
+function matches(videoInfo, searchTerm) {
   const { title, channelName, category } = videoInfo;
 
   return (
-    !title.includes(searchTerm) &&
-    !channelName.includes(searchTerm) &&
-    !category.includes(searchTerm)
+    title.includes(searchTerm) ||
+    channelName.includes(searchTerm) ||
+    category.includes(searchTerm)
   );
 }
